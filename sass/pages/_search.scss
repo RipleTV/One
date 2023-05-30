@@ -24,7 +24,7 @@
 }
 
 .search__input {
-    font-family: 'Nunito', sans-serif;
+    font-family: $font-stack;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -35,7 +35,7 @@
 }
 
 ::placeholder {
-    color: var(--primary-typography-color);
+    color: $primary-typography-color;
 }
 
 .search__button {

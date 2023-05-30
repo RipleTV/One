@@ -1,0 +1,12 @@
+// base 
+@import "./base/base";
+@import "./base/fonts";
+@import "./base/vars";
+
+// blocks 
+@import "./blocks/header";
+@import "./blocks/main";
+
+// pages
+@import "./pages/hero.scss";
+@import "./pages/search";
