@@ -1,0 +1,227 @@
+/*              CSS RESET                   */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0px auto;
+}
+
+/* PAGES COLORS */
+/* TYPOGRAPHY COLORS */
+/* FONTS */
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header ul {
+  display: flex;
+}
+.header a {
+  text-decoration: none;
+}
+.header a:link, .header a:visited {
+  color: #0F0F49;
+}
+.header a:hover, .header a:active, .header a:focus {
+  color: #3E3EF1;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #0F0F49;
+}
+body h1 {
+  font-size: 128px;
+  line-height: 175px;
+}
+body h2 {
+  font-size: 64px;
+  line-height: 87px;
+}
+body h3 {
+  font-size: 48px;
+  line-height: 65px;
+}
+body h4 {
+  font-size: 32px;
+  line-height: 44px;
+}
+body h5 {
+  font-size: 24px;
+  line-height: 33px;
+}
+body h6 {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+/* small default  */
+.button-small-default:link, .button-small-default:visited, .button-small-default:hover, .button-small-default:active, .button-small-default:focus {
+  background-color: #F2F2F2;
+  color: #0F0F49;
+  border-radius: 50px;
+  height: 50px;
+  width: 170px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* small active  */
+.button-small-active:link, .button-small-active:visited, .button-small-active:hover, .button-small-active:active, .button-small-active:focus {
+  background-color: #3E3EF1;
+  color: #FFFFFF;
+  border-radius: 50px;
+  height: 50px;
+  width: 170px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero {
+  margin: 185px auto;
+}
+
+.hero__title {
+  color: #3E3EF1;
+  padding-left: 5px;
+}
+
+.hero__subtitle {
+  color: #0F0F49;
+  margin-top: -15px;
+  margin-left: 102px;
+}
+
+.hero__buttons {
+  display: flex;
+  margin: 60px auto;
+  margin-right: 100px;
+  justify-content: flex-end;
+}
+.hero__buttons ul {
+  display: flex;
+  align-items: center;
+}
+.hero__buttons li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.hero__buttons--Search:link, .hero__buttons--Search:visited, .hero__buttons--Search:hover, .hero__buttons--Search:active, .hero__buttons--Search:focus {
+  background-color: #3E3EF1;
+  color: #FFFFFF;
+  border-radius: 50px;
+  height: 65px;
+  width: 370px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 838px;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 930px;
+  max-height: 40px;
+  border-radius: 50px;
+  padding: 20px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1215686275);
+}
+
+.search__group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-height: 50px;
+}
+
+.search__input {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+::placeholder {
+  color: #0F0F49;
+}
+
+.search__button {
+  position: relative;
+  left: -5px;
+  border: none;
+  background: none;
+}
