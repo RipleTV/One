@@ -14,29 +14,31 @@
 }
 
 .hero__buttons {
+    display: flex;
     margin: 60px auto;
     margin-right: 100px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
     justify-content: flex-end;
     
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
     li {
         display: inline-block;
         margin-left: 30px;
     }
 }
 
-.hero__buttons--Search:link, 
-.hero__buttons--Search:visited, 
-.hero__buttons--Search:hover, 
-.hero__buttons--Search:active {
-    background-color: $accent-hero-color;
-    color: $white-typography-color;
-    border-radius: 50px;
-    height: 65px;
-    width: 370px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
+.hero__buttons--Search {
+    &:link, &:visited, &:hover, &:active, &:focus {
+        background-color: $accent-hero-color;
+        color: $white-typography-color;
+        border-radius: 50px;
+        height: 65px;
+        width: 370px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+} 

@@ -1,7 +1,3 @@
-.wrapper {
-  max-width: 1170px;
-  margin: 0px auto;
-}
 
 body {
   font-family: $font-stack;
@@ -43,31 +39,29 @@ body {
   // BUTTONS 
   
 /* small default  */
-.button-small-default:link, 
-.button-small-default:visited, 
-.button-small-default:hover, 
-.button-small-default:active {
-  background-color: $grey-hero-color;
-  color: $primary-typography-color;
-  border-radius: 50px;
-  height: 50px;
-  width: 170px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+.button-small-default {
+  &:link, &:visited, &:hover, &:active, &:focus {
+    background-color: $grey-hero-color;
+    color: $primary-typography-color;
+    border-radius: 50px;
+    height: 50px;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
 }
 
     /* small active  */
-.button-small-active:link, 
-.button-small-active:visited, 
-.button-small-active:hover, 
-.button-small-active:active {
-  background-color: $accent-hero-color;
-  color: $white-typography-color;
-  border-radius: 50px;
-  height: 50px;
-  width: 170px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+.button-small-active {
+  &:link, &:visited, &:hover, &:active, &:focus {
+    background-color: $accent-hero-color;
+    color: $white-typography-color;
+    border-radius: 50px;
+    height: 50px;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
 }
