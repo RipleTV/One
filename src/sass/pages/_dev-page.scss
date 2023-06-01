@@ -1,0 +1,14 @@
+
+.test__header {
+    text-align: center;
+    color: grey;
+    a {
+        text-decoration: none;
+        &:link, &:visited {
+            color: rgb(34, 194, 141);
+        }
+        &:hover, &:active {
+            color: rgb(20, 110, 80);   
+        }
+    }
+}
