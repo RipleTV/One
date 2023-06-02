@@ -10,6 +10,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
             path: path.resolve(__dirname, './dist'),
             publicPath: '/dist'
         },
+        cache: {  
+            type: 'filesystem', // by default 'memory'
+        },
         module: {
             rules: [{
                 test: /\.js$/,
@@ -42,13 +45,28 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
             }, {
                 test: /\.css$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
-                    "css-loader"
+                    'style-loader',
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                          esModule: false,
+                        },
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: { sourceMap: true }
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: { sourceMap: true}
+                    },
                 ],
             }]
         },
         devServer: {
-            client: {overlay: true},
+            client: {
+                overlay: true,
+            },
             static: {directory: path.join(__dirname)}
         },
         plugins: [
