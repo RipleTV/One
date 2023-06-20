@@ -32,10 +32,16 @@
     width: 100%;
     border: none;
     outline: none;
+
+    &:placeholder-shown {
+        text-align: left;
+    }
 }
 
 ::placeholder {
     color: $primary-typography-color;
+    text-align: center;
+    margin-right: 80px;
 }
 
 .search__button {
