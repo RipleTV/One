@@ -1,0 +1,124 @@
+
+.anime__main__picture {
+    // border: 1px solid #73AD21;
+    height: 750-60px;
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        width: 100%;
+        height: 750px;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+.anime__title {
+    display: flex;
+    align-items: center;
+    height: 140px;
+}
+
+.anime__quality {
+    // border: 1px solid #73AD21;
+    height: 750px;
+
+    .anime__quality--picture {
+        position: absolute;
+        left: 0;
+        top: 890px;
+        width: 100%;
+        height: 750px;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+.anime__quality--options {
+    // border: 1px solid yellow;
+    height: 750px;
+    max-height: 750px;
+    // display: flex;
+}
+
+.anime__synced {
+    // border: 1px solid #73AD21;
+    height: 600px;
+}
+
+.anime__synced--title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+
+.anime__synced--buttons {
+    // border: 1px solid #73AD21;
+
+    margin: 30px 0px;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+    li { 
+        margin: 0px 30px;
+    }
+}
+
+.anime__synced--player {
+    display: flex;
+    justify-content: center;
+}
+
+.anime__seasons {
+    // border: 1px solid #73AD21;
+    li {
+        margin: 30px 0px;
+    }
+    label {
+        font-family: $font-stack;
+        font-style: normal;
+        font-weight: 400;
+        color: $primary-typography-color;
+        font-size: 32px;
+        line-height: 44px;
+    }
+}
+
+.anime__download {
+    // border: 1px solid #73AD21;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin: 0px 100px;
+
+    &--size {
+        display: flex;
+        padding: 80px;
+    }
+    &--button {
+
+    }
+}
+
+.anime__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $grey-hero-color;
+    color: $secondary-typography-color;
+    height: 50px;
+    
+    &--downloaded {
+
+    }
+    &--agreement {
+        
+    }
+}
