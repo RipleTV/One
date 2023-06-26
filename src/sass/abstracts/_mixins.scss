@@ -1,0 +1,43 @@
+
+// =================
+// TYPOGRAPHY
+// =================
+@mixin text-font {
+    font: {
+        family: $font-stack;
+        style: normal;
+        weight: 400;
+      };
+      color: $primary-typography-color;
+}
+
+@mixin text-h1 {
+    @include text-font;
+    font-size: 128px;
+    line-height: 175px;
+}
+@mixin text-h2 {
+    @include text-font;
+    font-size: 64px;
+    line-height: 87px;
+}
+@mixin text-h3 {
+    @include text-font;
+    font-size: 48px;
+    line-height: 65px;
+}
+@mixin text-h4 {
+    @include text-font;
+    font-size: 32px;
+    line-height: 44px;
+}
+@mixin text-h5 {
+    @include text-font;
+    font-size: 24px;
+    line-height: 33px;
+}
+@mixin text-h6 {
+    @include text-font;
+    font-size: 20px;
+    line-height: 27px;
+}

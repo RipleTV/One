@@ -1,11 +1,6 @@
 
 body {
-  font: {
-    family: $font-stack;
-    style: normal;
-    weight: 400;
-  };
-  color: $primary-typography-color;
+  @include text-font;
 
   h1 {
     font-size: 128px;

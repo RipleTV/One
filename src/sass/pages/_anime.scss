@@ -121,12 +121,7 @@
         margin: 30px 0px;
     }
     label {
-        font-family: $font-stack;
-        font-style: normal;
-        font-weight: 400;
-        color: $primary-typography-color;
-        font-size: 32px;
-        line-height: 44px;
+        @include text-h4;
     }
 }
 
