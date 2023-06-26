@@ -53,23 +53,32 @@
                         class="anime__quality--picture"
                     >
                 </div>
-                <div class="anime__quality--options">
-                    <div>
-                        <h3>
-                            <p>1080p</p>
-                            <p>720p</p>
-                            <p>420p</p>
-                            <p>320p</p>
-                        </h3>
-                    </div>
-
-                    <div class="anime__quality--size">
-                        <h5>
-                            <p>1 episode = 2 GB</p>
-                        </h5>
-                    </div>
+                <div>
+                    <ul class="anime__quality--options">
+                        <li>  font-family: $font-stack;
+                            font-style: normal;
+                            font-weight: 400;
+                            <h3>1080p</h3>
+                        </li>
+                        <li>
+                            <h3>720p</h3>
+                        </li>
+                        <li>
+                            <h3>420p</h3>
+                        </li>
+                        <li>
+                            <h3>320p</h3>
+                        </li>
+                    </ul>
                 </div>
+                <div class="anime__quality--gradient">
 
+                </div>
+                <div class="anime__quality--size">
+                    <h5>
+                        <p>1 episode = 2 GB</p>
+                    </h5>
+                </div>
             </div>
             <div>
                 <!-- Synced by author -->
@@ -136,18 +145,9 @@
             <div class="anime__download">
                 <!-- Download -->
                 <div class="anime__download--size">
-                    <ul>
-                        <li>
-                            <h4>
-                                Total: 90Gb
-                            </h4>
-                        </li>
-                        <li>
-                            <h4>
-                                [100-650ep.]
-                            </h4>
-                        </li>
-                    </ul>
+                    <h4>
+                        Total: 90Gb [100-650ep.]
+                    </h4>
                 </div>
                 <div class="anime__download--button">
                     <button>Download</button>
@@ -155,14 +155,14 @@
             </div>
             <footer class="anime__footer">
                 <!-- Footer  -->
-                <div class="anime__footer--download">
+                <!-- <div class="anime__footer--download">
                     <h6>
                         Downloaded: XXX times
                     </h6>
-                </div>
+                </div> -->
                 <div class="anime__footer--agreement">
                     <h6>
-                        Terms and agreement
+                        Copyright &copy; <script>document.write(new Date().getFullYear())</script>
                     </h6>                        
                 </div>
             </footer>

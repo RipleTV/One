@@ -21,10 +21,11 @@
 }
 
 .anime__quality {
-    // border: 1px solid #73AD21;
-    height: 750px;
+    border: 1px solid #73AD21;
+    // height: 750px;
 
-    .anime__quality--picture {
+    &--picture {
+        // border: 3px solid #fff06c;
         position: absolute;
         left: 0;
         top: 890px;
@@ -33,51 +34,90 @@
         object-fit: cover;
         z-index: -1;
     }
-}
 
-.anime__quality--options {
-    // border: 1px solid yellow;
-    height: 750px;
-    max-height: 750px;
-    // display: flex;
+    &--options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 750px;
+        max-height: 750px;
+        width: 170px;
+        gap: 60px;
+        flex-shrink: 0;
+    }
+
+    &--gradient {
+        // border: 3px solid #fff06c;
+        position: absolute;
+        left: 0;
+        top: 890px;
+        width: 35%;
+        height: 750px;
+        object-fit: cover;
+        z-index: -1;
+        background-color: white;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.60) 60%, rgba(255, 255, 255, 0.30) 80%, rgba(255, 255, 255, 0.00) 100%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    &--size {
+        // border: 1px solid yellow;
+        display: flex;
+        position: relative;
+        top: -70px;
+        height: 70px;
+        justify-content: center;
+        align-items: center;
+        color: $white-typography-color;
+        // Instead of Webkit stroke using text-shadow
+        // Because webkit not suppot outline stroke-
+        text-shadow:
+        -1px -1px 0 $primary-typography-color,  
+         1px -1px 0 $primary-typography-color,
+        -1px  1px 0 $primary-typography-color,
+         1px  1px 0 $primary-typography-color;
+    }
 }
 
 .anime__synced {
     // border: 1px solid #73AD21;
     height: 600px;
-}
 
-.anime__synced--title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 110px;
-}
-
-.anime__synced--buttons {
-    // border: 1px solid #73AD21;
-
-    margin: 30px 0px;
-
-    ul {
+    &--title {
         display: flex;
         justify-content: center;
-        margin: 20px 0px;
+        align-items: center;
+        height: 110px;
     }
 
-    li { 
-        margin: 0px 30px;
+    &--buttons {
+        // border: 1px solid #73AD21;
+
+        margin: 30px 0px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0px;
+        }
+
+        li { 
+            margin: 0px 30px;
+        }
+    }
+
+    &--player {
+        display: flex;
+        justify-content: center;
     }
 }
 
-.anime__synced--player {
-    display: flex;
-    justify-content: center;
-}
 
 .anime__seasons {
     // border: 1px solid #73AD21;
+    margin: 120px;
     li {
+        // border: 1px solid #cab600;
         margin: 30px 0px;
     }
     label {
@@ -96,11 +136,18 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    margin: 0px 100px;
+    margin: 0px 100px;      // Left and right
+    margin-bottom: 100px;   // Bottom
 
     &--size {
+        // border: 1px solid #73AD21;   
         display: flex;
-        padding: 80px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;   
+        height: 100px;
+        width: 400px;
+        // padding: 80px;
     }
     &--button {
 
@@ -113,6 +160,10 @@
     align-items: center;
     background-color: $grey-hero-color;
     color: $secondary-typography-color;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 1;         // More than zero (because delete)
     height: 50px;
     
     &--downloaded {

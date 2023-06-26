@@ -1,8 +1,10 @@
 
 body {
-  font-family: $font-stack;
-  font-style: normal;
-  font-weight: 400;
+  font: {
+    family: $font-stack;
+    style: normal;
+    weight: 400;
+  };
   color: $primary-typography-color;
 
   h1 {
