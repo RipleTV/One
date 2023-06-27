@@ -115,7 +115,7 @@ $img-height: 750px;
         }
 
         button {
-            @extend .button__medium--default;
+            @extend .button__medium;
         }
     }
 
@@ -173,13 +173,13 @@ $img-height: 750px;
         width: 470px;
         height: 90px;
     
-        &--default {
+        &:active, &--default {
             @extend .anime__download__button;
             background-color: $accent-hero-color;
             color: $white-typography-color;
         }
     
-        &--disabled {
+        &:disabled, &--disabled {
             @extend .anime__download__button;
             background-color: $grey-hero-color;
             color: $secondary-typography-color;
