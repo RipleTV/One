@@ -35,8 +35,8 @@
             </div>
         </div>
         <!-- PROFILE -->
-        <div>
-            <div>
+        <div class="profile">
+            <div class="profile__nickname">
                 <ul>
                     <li>
                         <h2>
@@ -44,20 +44,30 @@
                         </h2>
                     </li>
                     <li>
-                        <img src="../img/change_name_icon.svg" alt="edit nickname icon">
+                        <button class="profile__nickname--button" >
+                            <img src="../img/change_name_icon.svg" alt="edit nickname icon">
+                        </button>
                     </li>
                 </ul>
             </div>
-            <div>
-                <div>
+            <div class="profile__settings">
+                <div class="profile__settings--download">
                     <h4>
                         Downloaded: XXX times
                     </h4>
                 </div>
-                <div>
-                    <button disabled="disabled">History</button>
-                    <button>Your email</button>
-                    <button>Your password</button>
+                <div class="profile__settings--buttons">
+                    <ul>
+                        <li>
+                            <button disabled="disabled">History</button>
+                        </li>
+                        <li>
+                            <button>Your email</button>
+                        </li>
+                        <li>
+                            <button>Your password</button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

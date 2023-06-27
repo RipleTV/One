@@ -63,7 +63,14 @@ $img-height: 750px;
         object-fit: cover;
         z-index: -1;
         background-color: white;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.60) 60%, rgba(255, 255, 255, 0.30) 80%, rgba(255, 255, 255, 0.00) 100%, rgba(255, 255, 255, 0.00) 100%);
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.90) 0%,
+            rgba(255, 255, 255, 0.60) 60%,
+            rgba(255, 255, 255, 0.30) 80%,
+            rgba(255, 255, 255, 0.00) 100%,
+            rgba(255, 255, 255, 0.00) 100%
+        );
     }
 
     &--size {
