@@ -1,28 +1,105 @@
-  
-/* small default  */
-.button-small-default {
-    &:link, &:visited, &:hover, &:active, &:focus {
-      background-color: $grey-hero-color;
-      color: $primary-typography-color;
-      border-radius: 50px;
-      height: 50px;
-      width: 170px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
+
+.button {
+  &__small {
+    @include text-h5;
+    border-radius: 50px;
+    height: 50px;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+
+    &--default {
+      // &:link, &:visited, &:hover, &:active, &:focus {
+        @extend .button__small;
+        background-color: $grey-hero-color;
+        color: $primary-typography-color;
+      // }
     }
-  }
-  
-    /* small active  */
-.button-small-active {
-    &:link, &:visited, &:hover, &:active, &:focus {
+
+    &--active {
+      // &:link, &:visited, &:hover, &:active, &:focus {
+        @extend .button__small;
         background-color: $accent-hero-color;
         color: $white-typography-color;
-        border-radius: 50px;
-        height: 50px;
-        width: 170px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
+      // }
     }
+
+    &--disabled {
+      @extend .button__small;
+      background-color: $grey-hero-color;
+      color: $secondary-typography-color;
+    }
+  }
+
+  &__medium {
+    @include text-h4;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    width: 470px;
+    height: 75px;
+    padding: 10px 0px;
+
+    &--default {
+      // &:link, &:visited, &:hover, &:active, &:focus {
+        @extend .button__medium;
+        background-color: $grey-hero-color;
+        color: $primary-typography-color;
+      // }
+    }
+
+    &--active {
+      // &:link, &:visited, &:hover, &:active, &:focus {
+        @extend .button__medium;
+        background-color: $accent-hero-color;
+        color: $white-typography-color;
+      // }
+    }
+
+    &--disabled {
+        @extend .button__medium;
+      background-color: $grey-hero-color;
+      color: $secondary-typography-color;
+    }
+  }
+  &__large {
+    @include text-h4;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    width: 504px;
+    height: 144px;
+
+
+    &--default {
+      // &:link, &:visited, &:hover, &:active, &:focus {
+        @extend .button__large;
+        background-color: $grey-hero-color;
+        color: $primary-typography-color;
+      // }
+    }
+
+    &--active {
+      // &:link, &:visited, &:hover, &:active, &:focus {
+        @extend .button__large;
+        background-color: $accent-hero-color;
+        color: $white-typography-color;
+      // }
+    }
+
+    &--disabled {
+        @extend .button__large;
+      background-color: $grey-hero-color;
+      color: $secondary-typography-color;
+    }
+  }
 }
+
