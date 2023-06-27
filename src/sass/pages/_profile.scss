@@ -63,5 +63,9 @@
         padding: 0px 30px;
         gap: 45px;
         }
+
+        button {
+            @extend .button__medium--default;
+        }
     }
 }
