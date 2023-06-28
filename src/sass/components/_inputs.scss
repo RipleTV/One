@@ -1,0 +1,68 @@
+
+fieldset {
+    position: relative;
+    margin-top: 30px;
+
+    label {
+        @include text-h5;
+        position: absolute;
+        top: 20px;
+        z-index: -1;
+        //  * alignment to center
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        //  *
+        transition: 0.3s;
+        color: $primary-typography-color;
+    }
+
+    input {
+        @include text-h5;
+        width: 460px;
+        height: 65px;
+        border: 2px solid;
+        border-radius: 50px;
+        border-color: $grey-hero-color;
+        background-color: transparent;
+        outline: none;
+        text-align: center;
+        transition: 0.3s;
+
+        &:focus {
+            border-color: $accent-hero-color;
+            color: $accent-hero-color;
+        }
+        // used to sace color when is value in input
+        // &:not(:placeholder-shown) {
+        //     color: $accent-hero-color;
+        // }
+        &:invalid {
+            border-color: $error-typography-color;
+            &:not(:placeholder-shown) {
+                color: $error-typography-color;
+            }
+        }
+        &:disabled {
+            border-color: $grey-hero-color;
+            background-color: $grey-hero-color;
+        }
+    }
+
+    // Hover label upper field
+    // Using :not(...) with <input ... 'placeholder=" ">
+    // to save hevering while field has value 
+    input:focus ~ label,
+    input:not(:placeholder-shown) ~ label {
+        @include text-h6;
+        color: $secondary-typography-color;
+        top: -30px;
+    }
+
+    // Disabled input - changing label
+    input:disabled ~ label {
+        z-index: 1;
+        color: $secondary-typography-color;
+    }
+}
