@@ -11,4 +11,16 @@
     a {
         @include link;
     }
+
+    &--bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        z-index: -1;
+        background: rgba(255, 255, 255, 0.30);
+        /* Header Blure */
+        backdrop-filter: blur(2px);
+    }
 }

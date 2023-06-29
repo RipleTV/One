@@ -6,7 +6,7 @@ $img-height: 750px;
     width: 100%;
     height: $img-height;
     object-fit: cover;
-    z-index: -1;
+    z-index: -2;
 }
 
 
@@ -30,11 +30,8 @@ $img-height: 750px;
 }
 
 .anime__quality {
-    // border: 1px solid #73AD21;
-    // height: 750px;
 
     &--picture {
-        // border: 3px solid #fff06c;
         @extend .anime__img;
         position: absolute;
         left: 0;
@@ -65,7 +62,6 @@ $img-height: 750px;
     }
 
     &--gradient {
-        // border: 3px solid #fff06c;
         position: absolute;
         left: 0;
         top: 890px;
@@ -85,7 +81,6 @@ $img-height: 750px;
     }
 
     &--size {
-        // border: 1px solid yellow;
         display: flex;
         position: relative;
         top: -70px;
@@ -104,7 +99,6 @@ $img-height: 750px;
 }
 
 .anime__synced {
-    // border: 1px solid #73AD21;
     height: 600px;
 
     &--title {
@@ -115,7 +109,6 @@ $img-height: 750px;
     }
 
     &--buttons {
-        // border: 1px solid #73AD21;
         margin: 30px 0px;
 
         ul {
@@ -127,6 +120,10 @@ $img-height: 750px;
 
         button {
             @extend .button__medium;
+
+            &:focus {
+                @extend .button__medium--active;
+            }
         }
     }
 

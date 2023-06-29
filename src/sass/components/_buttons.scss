@@ -14,11 +14,9 @@
     color: $primary-typography-color;
 
     &:active, &--active {
-      // &:link, &:visited, &:hover, &:active, &:focus {
         @extend .button__small;
         background-color: $accent-hero-color;
         color: $white-typography-color;
-      // }
     }
 
     &:disabled, &--disabled {
