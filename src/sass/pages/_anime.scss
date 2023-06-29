@@ -51,6 +51,17 @@ $img-height: 750px;
         width: 170px;
         gap: 60px;
         flex-shrink: 0;
+
+        button {
+            @include text-h3;
+            border: none;
+            background: none;
+            color: $primary-typography-color;
+        
+            &:hover, &:focus {
+                color: $accent-hero-color;
+            }
+        }
     }
 
     &--gradient {
