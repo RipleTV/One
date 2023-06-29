@@ -205,16 +205,3 @@ $img-height: 750px;
         }
     }
 }
-
-.anime__footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: $grey-hero-color;
-    color: $secondary-typography-color;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 1;         // More than zero (because delete)
-    height: 50px;
-}
