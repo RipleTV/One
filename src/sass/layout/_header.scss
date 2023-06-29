@@ -9,14 +9,6 @@
     }
 
     a {
-        text-decoration: none;
-
-        &:link, &:visited {
-            color: $primary-typography-color;
-        }
-
-        &:hover, &:active, &:focus {
-           color: $accent-hero-color; 
-        }
+        @include link;
     }
 }
