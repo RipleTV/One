@@ -80,5 +80,38 @@
       color: $secondary-typography-color;
     }
   }
+
+  &__google {
+
+    button {
+      @include text-h5;
+      outline: none;
+      background: none;
+      height: 65px;
+      width: 460px;
+      border: 2px solid;
+      border-radius: 50px;
+      background-image: url(/src/img/google_g_logo.svg);
+      background-repeat: no-repeat;
+      background-position: 30px;
+      border-color: $grey-hero-color;
+
+      &:hover {
+        border-color: $accent-hero-color;
+      }
+
+      &:active {
+        border-color: $accent-hero-color;
+        background-color: $accent-hero-color;
+        color: $white-typography-color;
+      }
+
+      &:disabled {
+        border-color: $grey-hero-color;
+        background-color: $grey-hero-color;
+        color: $secondary-typography-color;
+      }
+    }
+  }
 }
 
