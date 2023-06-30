@@ -35,25 +35,33 @@
             </div>
         </div>
         <!-- REGISTER  -->
-        <div>
-            <div>
-                <h3>
-                    Register
-                </h3>
-            </div>
-            <div>
-                <input type="text" name="nickname" id="nickname" />
-                <label for="nickname">Nickname</label>
-                <input type="email" name="email" id="email" />
-                <label for="email">Email</label>
-                <input type="password" name="pwd" id="pwd" />
-                <label for="pwd">Password</label>
-                <input type="password" name="pwd2nd" id="pwd2nd" />
-                <label for="pwd2nd">Password again</label>
-            </div>
-            <div>
-                <button>Log in</button>
-                <button>Register</button>
+        <div class="register">
+            <div class="register__box">
+                <div class="register__title">
+                        Register
+                </div>
+                <div class="register__fields">
+                    <div class="form__text">
+                        <input type="text" name="nickname" id="nickname" placeholder=" " />
+                        <label for="nickname">Nickname</label>    
+                    </div>
+                    <div class="form__text">
+                        <input type="email" name="email" id="email" placeholder=" " />
+                        <label for="email">Email</label>        
+                    </div>
+                    <div class="form__text">
+                        <input type="password" name="pwd" id="pwd" placeholder=" " />
+                        <label for="pwd">Password</label>
+                    </div>
+                    <div class="form__text">
+                        <input type="password" name="pwd2nd" id="pwd2nd" placeholder=" " />
+                        <label for="pwd2nd">Password again</label>
+                    </div>
+                </div>
+                <div class="register__buttons">
+                    <button class="button__small">Log in</button>
+                    <button class="button__small--active">Register</button>
+                </div>
             </div>
         </div>
     </div>
