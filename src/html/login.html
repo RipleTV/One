@@ -35,41 +35,43 @@
             </div>
         </div>
         <!-- LOGIN  -->
-        <div>
-            <div>
-                <h3>
-                    Login
-                </h3>
-            </div>
-            <div>
-                <div>
-                    <button>
-                        Continue with Google
-                    </button>
+        <div class="login">
+            <div class="login__box">
+                <div class="login__title">
+                    <h3>
+                        Login
+                    </h3>
                 </div>
-                <div>
-                    <h6>
-                        or
-                    </h6>
-                    <hr/>
-                </div>
-                <div>
-                    <div>
-                        <input type="email" name="email" id="email">
-                        <label for="email">Email</label>
-                        <input type="password" name="pwd" id="pwd">
-                        <label for="pwd">Password</label>
+                <div class="login__interaction">
+                    <div class="login__interaction--google">
+                        <button>
+                            Continue with Google
+                        </button>
+                    </div>
+                    <div class="login__interaction--or">
+                        <span>or</span>
+                        <hr/>
                     </div>
                     <div>
-                        <h6>
-                            Forgot password?
-                        </h6>
+                        <div>
+                            <div class="form__text">
+                                <input type="email" name="email" id="email" placeholder=" ">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form__text">
+                                <input type="password" name="pwd" id="pwd" placeholder=" ">
+                                <label for="pwd">Password</label>
+                            </div>
+                        </div>
+                        <div class="login__interaction--forgot_password">
+                            <a href="#">Forgot password?</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <button>Register</button>
-                <button>Log in</button>
+                <div class="login__buttons">
+                    <button class="button__small">Register</button>
+                    <button class="button__small--active">Log in</button>
+                </div>
             </div>
         </div>
     </div>
