@@ -45,14 +45,17 @@
 // =================
 // LINKS
 // =================
-@mixin link {
-    text-decoration: none;
+@mixin link(
+    $primary-color: $primary-typography-color,
+    $active-color: $accent-hero-color
+    ) {
+        text-decoration: none;
 
-    &:link, &:visited {
-        color: $primary-typography-color;
-    }
+        &:link, &:visited {
+            color: $primary-color;
+        }
 
-    &:hover, &:active, &:focus {
-       color: $accent-hero-color; 
+        &:hover, &:active, &:focus {
+        color: $active-color; 
+        }
     }
-}
