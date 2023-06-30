@@ -9,6 +9,7 @@
     &__box {
         display: flex;
         flex-direction: column;
+        text-align: center;
         gap: 50px;
         // width: 550px;
         // min-height: 600px;
@@ -19,11 +20,11 @@
     }
 
     &__title {
-        text-align: center;
+        @include text-h3;
     }
 
     &__interaction {
-        text-align: center;
+        // text-align: center;
 
         &--google {
             @extend .button__google;
