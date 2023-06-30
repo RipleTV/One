@@ -11,7 +11,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
             publicPath: '/dist'
         },
         cache: {  
-            type: 'filesystem', // by default 'memory'
+            type: 'memory', // by not default 'filesystem'
         },
         module: {
             rules: [{
