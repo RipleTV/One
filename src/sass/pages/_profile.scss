@@ -9,13 +9,45 @@
 .profile__nickname {
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 50px 0px;
+
+    // border: 2px solid yellow;
 
     ul {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 20px;
+        height: 100px;
+        overflow: auto;
+
+        // border: 2px solid red;
+    }
+
+    &--nickname {
+        span {
+            @include text-h2;
+            border: none;
+            outline: none;
+            text-align: right;
+    
+            &:focus, &--focus {
+                @extend .profile__nickname--nickname;
+                color: $accent-hero-color;
+            }
+    
+            &:invalid, &--invalid {
+                @extend .profile__nickname--nickname;
+                color: $error-typography-color;
+            }
+        }
+    }
+
+    &--error_message {
+        @include text-h6;
+        display: none;
+        color: $error-typography-color;
+        text-align: right;
     }
 
     &--button {
@@ -23,6 +55,9 @@
         border: none;
     }
 
+    // &--nickname:has(span:invalid) ~ &--error_message {
+    //     display: block;
+    // }
 }
 
 .profile__settings {
