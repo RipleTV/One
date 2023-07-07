@@ -2,9 +2,16 @@
     @extend .box__page;
 
     &__box {
-            @extend .box;
-            align-items: center;
-            gap: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        // width: 550px;
+        // min-height: 600px;
+        border-radius: 50px;
+        padding: 62px 46px;
+        /* Light Shadow */
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.12);
     }
 
     &__title {
