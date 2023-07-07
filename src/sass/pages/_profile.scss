@@ -87,13 +87,9 @@
         }
 
         button {
-            $height: 120px;
+            @include button-height-size(120);
             /* Light Shadow */
             box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.12);
-            
-            &, &:focus, &:disabled {
-                height: $height;
-            }
         }
     }
 }

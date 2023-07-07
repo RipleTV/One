@@ -59,11 +59,7 @@
         justify-content: space-between;
 
         button {
-            $width: 210px;
-
-            &, &:active, &:disabled {
-                width: $width;
-            } 
+            @include button-width-size(210);
         }
     }
 

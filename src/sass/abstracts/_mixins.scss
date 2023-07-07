@@ -58,3 +58,19 @@
         color: $active-color; 
         }
     }
+
+// =================
+// BUTTONS
+// =================
+
+@mixin button-width-size($width) {
+    &, &:hover, &:active, &:invalid, &:disabled {
+        width: $width * 1px;
+    }
+}
+
+@mixin button-height-size($height) {
+    &, &:hover, &:active, &:invalid, &:disabled {
+        height: $height * 1px;
+    }
+}

@@ -117,13 +117,9 @@ $img-height: 750px;
         }
 
         button {
-            $height: 50px;
-
+            @include button-height-size(50);
             &:focus {
                 @extend .button__medium--active;
-            }
-            &, &:focus, &:disabled {
-                height: $height;
             }
         }
     }

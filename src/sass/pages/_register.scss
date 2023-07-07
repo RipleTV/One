@@ -21,12 +21,7 @@
         width: 100%;
 
         button {
-            $width: 210px;
-            width: $width;
-
-            &:active, &:disabled {
-                width: $width;
-            } 
+            @include button-width-size(210);
         }
     }
 }
