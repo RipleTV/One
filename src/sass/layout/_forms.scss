@@ -3,21 +3,17 @@
     $width: 460px;
 
     position: relative;
-    margin-top: 30px;
     width: $width + 8px;
+    margin-top: 30px;
 
     label {
         @include text-h5;
         position: absolute;
         top: 20px;
         z-index: -1;
-        //  * alignment to center
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        //  *
+        left: 0;                // * 
+        right: 0;               // *    alignment to center
+        text-align: center;     // *
         transition: 0.3s;
         color: $primary-typography-color;
     }
@@ -35,19 +31,23 @@
         transition: 0.3s;
 
         &:focus {
-            border-color: $accent-hero-color;
             color: $accent-hero-color;
+            border-color: $accent-hero-color;
         }
-        // used to sace color when is value in input
+        // If we need to save accent color while value in field 
         // &:not(:placeholder-shown) {
         //     color: $accent-hero-color;
         // }
+
         &:invalid {
             border-color: $error-typography-color;
+
+            // If we need to save error color while value in field 
             &:not(:placeholder-shown) {
                 color: $error-typography-color;
             }
         }
+
         &:disabled {
             border-color: $grey-hero-color;
             background-color: $grey-hero-color;
@@ -60,11 +60,11 @@
     input:focus ~ label,
     input:not(:placeholder-shown) ~ label {
         @include text-h6;
-        color: $secondary-typography-color;
         top: -30px;
+        color: $secondary-typography-color;
     }
 
-    // Disabled input - changing label
+    // Disabled input -> changing label
     input:disabled ~ label {
         z-index: 1;
         color: $secondary-typography-color;
@@ -97,8 +97,7 @@
         &:hover {
             box-shadow: 0px 0px 10px $accent-hero-color;
         }
-
-            // Add check mark
+            // Adds check mark
         &:checked:after {
             content: url(/src/img/check_mark.svg);
             position:absolute;

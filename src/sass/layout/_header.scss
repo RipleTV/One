@@ -1,12 +1,8 @@
 .header {
-    height: 60px;
     display: flex;
     justify-content: space-between;
+    height: 60px;
     align-items: center;
-
-    ul {
-        display: flex;
-    }
 
     a {
         @include link;
@@ -17,8 +13,8 @@
         top: 0;
         left: 0;
         right: 0;
-        height: 60px;
         z-index: -1;
+        height: 60px;
         background: rgba(255, 255, 255, 0.30);
         /* Header Blure */
         backdrop-filter: blur(2px);

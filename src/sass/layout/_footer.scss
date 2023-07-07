@@ -1,12 +1,12 @@
 footer {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    background-color: $grey-hero-color;
-    color: $secondary-typography-color;
     position: absolute;
+    height: 50px;
     right: 0;
     left: 0;
     bottom: 1;         // More than zero (because delete)
-    height: 50px;
+    align-items: center;
+    color: $secondary-typography-color;
+    background-color: $grey-hero-color;
 }
