@@ -3,16 +3,14 @@ $img-height: 750px;
 
 // Excludes
 .anime__img {
+    z-index: -2;
     width: 100%;
     height: $img-height;
     object-fit: cover;
-    z-index: -2;
 }
 
-
-
+// Anime page
 .anime__main__picture {
-    // border: 1px solid #73AD21;
     height: $img-height - 60px;
 
     img {
@@ -25,8 +23,8 @@ $img-height: 750px;
 
 .anime__title {
     display: flex;
-    align-items: center;
     height: 140px;
+    align-items: center;
 }
 
 .anime__quality {
@@ -34,8 +32,8 @@ $img-height: 750px;
     &--picture {
         @extend .anime__img;
         position: absolute;
-        left: 0;
         top: 890px;
+        left: 0;
     }
 
     &--options {
@@ -63,12 +61,12 @@ $img-height: 750px;
 
     &--gradient {
         position: absolute;
-        left: 0;
+        z-index: -1;
         top: 890px;
+        left: 0;
         width: 35%;
         height: $img-height;
         object-fit: cover;
-        z-index: -1;
         background-color: white;
         background: linear-gradient(
             90deg,
@@ -82,10 +80,10 @@ $img-height: 750px;
 
     &--size {
         display: flex;
+        justify-content: center;
         position: relative;
         top: -70px;
         height: 70px;
-        justify-content: center;
         align-items: center;
         color: $white-typography-color;
         // Instead of Webkit stroke using text-shadow
@@ -104,8 +102,8 @@ $img-height: 750px;
     &--title {
         display: flex;
         justify-content: center;
-        align-items: center;
         height: 110px;
+        align-items: center;
     }
 
     &--buttons {
@@ -119,10 +117,13 @@ $img-height: 750px;
         }
 
         button {
-            @extend .button__medium;
+            $height: 50px;
 
             &:focus {
                 @extend .button__medium--active;
+            }
+            &, &:focus, &:disabled {
+                height: $height;
             }
         }
     }
@@ -145,11 +146,10 @@ $img-height: 750px;
         display: flex;
         width: 100%;
         height: 80px;
-        align-items: center;
-        flex-shrink: 0;
-
         margin: 30px 0px;
         border-radius: 50px;
+        flex-shrink: 0;
+        align-items: center;
         background-color: $white-hero-color;
         /* Light Shadow */
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.12);
@@ -167,32 +167,31 @@ $img-height: 750px;
 .anime__download {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 100px;
-    margin: 0px 100px;      // Left and right
-    margin-bottom: 100px;   // Bottom
+    margin: 0px 100px 100px 100px; // top 0, left right 100px, bottom 100px
     gap: 100px;
+    align-items: center;
 
     &__size {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         justify-content: center;   
         height: 100px;
         width: 400px;
+        align-items: center;
     }
     &__button {
         @include text-h2;
-        display: flex;
-        text-align: center;
-        text-decoration: none;
         display: inline-block;
-        border: none;
-        border-radius: 20px;
         width: 470px;
         height: 90px;
+        border: none;
+        border-radius: 20px;
+        text-align: center;
+        text-decoration: none;
+
     
-        &:active, &--default {
+        &:active, &--active, &--default {
             @extend .anime__download__button;
             background-color: $accent-hero-color;
             color: $white-typography-color;

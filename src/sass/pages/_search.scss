@@ -19,7 +19,6 @@
         align-items: center;
         justify-content: flex-start;
         max-height: 50px;
-        // margin: 20px;
 
         input, &--input {
             @include text-h5;
@@ -35,8 +34,8 @@
 
     ::placeholder {
         color: $primary-typography-color;
-        text-align: center;
         margin-right: 80px;
+        text-align: center;
     }
 
     &__button {
@@ -54,24 +53,24 @@
         margin-top: 20px;
 
         li {
-            margin-top: 10px;
             // top: 20px;
             // width: 80%;
             // max-width: 770px;
             // max-height: 40px;
-            border-radius: 50px;
+            margin-top: 10px;
             padding: 20px;
-            border: 2px solid $accent-hero-color;  
+            border: 2px solid $accent-hero-color; 
+            border-radius: 50px; 
             
             &:hover {
-                background-color: $accent-hero-color;
                 color: $white-typography-color;
+                background-color: $accent-hero-color;
             }
         }
 
         span {
-            background-color: $accent-hero-color;
             color: $white-typography-color;
+            background-color: $accent-hero-color;
         }
         
     }
@@ -84,7 +83,6 @@
     &__group:has(input:focus) ~ &__result{
         display: flex;
     }
-
 }
 
 

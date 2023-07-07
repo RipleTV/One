@@ -4,20 +4,20 @@
   }
   
 .hero__title {
-    color: $accent-hero-color;
     padding-left: 5px;
+    color: $accent-hero-color;
 }
 .hero__subtitle {
-    color: $primary-typography-color; 
     margin-top: -15px;
     margin-left: 102px;
+    color: $primary-typography-color; 
 }
 
 .hero__buttons {
     display: flex;
+    justify-content: flex-end;
     margin: 60px auto;
     margin-right: 100px;
-    justify-content: flex-end;
     
     ul {
         display: flex;
@@ -28,17 +28,22 @@
         display: inline-block;
         margin-left: 30px;
     }
-}
 
-.hero__buttons--Search {
-    &:link, &:visited, &:hover, &:active, &:focus {
-        background-color: $accent-hero-color;
-        color: $white-typography-color;
+    &--join_us {
+        @extend .button__small;
         border-radius: 50px;
-        height: 65px;
-        width: 370px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
     }
-} 
+
+    &--search {
+        &:link,
+        &:visited,
+        &:hover,
+        &:active,
+        &:focus {
+            @extend .button__medium--active;
+            height: 65px;
+            width: 370px;
+            border-radius: 50px;
+        }
+    }
+}
