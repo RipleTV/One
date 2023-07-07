@@ -1,6 +1,7 @@
 
 body {
   @include text-font;
+  color: $primary-typography-color;
   
   h1 {@include text-h1;}
   h2 {@include text-h2;}
