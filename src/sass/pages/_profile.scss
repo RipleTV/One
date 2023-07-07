@@ -11,17 +11,13 @@
     justify-content: center;
     padding: 50px 0px;
 
-    // border: 2px solid yellow;
-
     ul {
+        overflow: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 20px;
         height: 100px;
-        overflow: auto;
-
-        // border: 2px solid red;
     }
 
     &--nickname {
@@ -46,13 +42,13 @@
     &--error_message {
         @include text-h6;
         display: none;
-        color: $error-typography-color;
         text-align: right;
+        color: $error-typography-color;
     }
 
     &--button {
-        background: none;
         border: none;
+        background: none;
     }
 
     // &--nickname:has(span:invalid) ~ &--error_message {
@@ -62,16 +58,14 @@
 
 .profile__settings {
     display: flex;
-    width: 570px;
-    padding: 36px 0px;
     flex-direction: column;
     align-items: center;
+    width: 570px;
+    padding: 36px 0px;
     gap: 36px;              // Same as padding
-    flex-shrink: 0;
-
     border-radius: 30px;
+    flex-shrink: 0;
     background: $white-hero-color;
-
     /* Light Shadow */
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.12);
 
@@ -93,10 +87,13 @@
         }
 
         button {
-            @extend .button__medium;
-            height: 120px;
+            $height: 120px;
             /* Light Shadow */
             box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.12);
+            
+            &, &:focus, &:disabled {
+                height: $height;
+            }
         }
     }
 }
