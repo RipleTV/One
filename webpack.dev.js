@@ -7,12 +7,12 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    open: true,
-    hot: true,
     client: {overlay: true},
     static: common.externals.paths.dist,
-    // static: './dist',
     // port: 8081,
+    open: true,
+    hot: true,
+    watchFiles: ['src/**/*']
   },
   module: {
     rules: [
