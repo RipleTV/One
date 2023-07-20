@@ -1,35 +1,36 @@
 {
-  "name": "webpacktemplate",
+  "name": "webpack5-template",
   "version": "1.0.0",
-  "description": "My template",
-  "main": "index.js",
+  "description": "WebPack-5 template from webpack guide",
+  "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
-  "browserslist": [
-    "> 1%",
-    "last 3 version"
-  ],
-  "author": "Riple",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.21.8",
-    "@babel/preset-env": "^7.21.5",
-    "@popperjs/core": "^2.11.8",
+    "@babel/core": "^7.22.8",
+    "@babel/preset-env": "^7.22.7",
     "autoprefixer": "^10.4.14",
-    "babel-loader": "^9.1.2",
-    "bootstrap": "^5.3.0",
+    "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
     "cssnano": "^6.0.1",
+    "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
     "node-sass": "^9.0.0",
-    "path": "^0.12.7",
-    "postcss-loader": "^7.3.2",
-    "sass-loader": "^13.3.1",
+    "postcss": "^8.4.25",
+    "postcss-loader": "^7.3.3",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
-    "webpack": "^5.83.1",
-    "webpack-cli": "^5.1.1",
-    "webpack-dev-server": "^4.15.0"
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.9.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

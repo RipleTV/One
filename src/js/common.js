@@ -1,3 +1,3 @@
-
-// let add = (a,b) => a+b
-// console.log(add(2,4));
+if (process.env.NODE_ENV !== 'production') {
+    console.log('[index.js] Looks like we are in development mode!');
+}

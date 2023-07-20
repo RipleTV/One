@@ -1,4 +1,3 @@
-
-import './js/common.js'
-import './css/main.css'
-import './sass/main.scss'
+import "./css/index.css";
+import "./sass/index.scss";
+import "./js/common.js";
