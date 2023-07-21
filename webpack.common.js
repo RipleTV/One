@@ -44,7 +44,7 @@ module.exports = {
       },
       {
         //  Images
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
         type: 'asset/resource',
       },
     ],
@@ -52,6 +52,7 @@ module.exports = {
   plugins: [
     // Elements
     new HtmlWebpackPlugin({
+      favicon: `${PATHS.src}/img/favicon.ico`,
       template: `${PATHS.src}/html/elements.html`,
       filename: 'index.html',
     }),
