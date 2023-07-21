@@ -70,7 +70,7 @@
 }
 
 @mixin button-height-size($height) {
-    &, &:hover, &:active, &:invalid, &:disabled {
+    &, &:hover, &:active, &:focus, &:invalid, &:disabled{
         height: $height * 1px;
     }
 }
