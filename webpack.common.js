@@ -59,7 +59,7 @@ module.exports = {
     // Home page (index.html)
     new HtmlWebpackPlugin({
       template: `${PATHS.src}/html/hero.html`,
-      filename: 'home.html',
+      filename: 'hero.html',
     }),
     // Search page
     new HtmlWebpackPlugin({
