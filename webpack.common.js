@@ -16,7 +16,7 @@ module.exports = {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
     publicPath: '/',
-    assetModuleFilename: `${PATHS.assets}images/[hash][ext][query]`,
+    assetModuleFilename: `${PATHS.assets}img/[name][ext][query]`,
     clean: true,
   },
   optimization: {
