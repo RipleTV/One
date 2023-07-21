@@ -1,3 +1,9 @@
+// Nav blure in all pages
+nav {
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(2px);
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -7,16 +13,5 @@
     a {
         @include link;
     }
-
-    &--bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        height: 60px;
-        background: rgba(255, 255, 255, 0.30);
-        /* Header Blure */
-        backdrop-filter: blur(2px);
-    }
 }
+

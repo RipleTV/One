@@ -8,54 +8,62 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- HEADER -->
-        <div class="header">
-            <div class="header_logo">
-                <a href="/home.html">
-                    <h5>AniBlue </h5>
-                </a>
+        <nav>
+            <div class="container">
+                <div class="header">
+                    <div class="header_logo">
+                        <a href="/home.html">
+                            <h5>AniBlue </h5>
+                        </a>
+                    </div>
+                    <div class="header_search">
+                        <a href="/search.html">
+                            <h5>Search</h5>
+                        </a>
+                    </div>
+                    <div class="header_profile">
+                        <a href="/profile.html">
+                            <h5>Nickname</h5>    
+                        </a>
+                    </div>
+                </div>                
             </div>
-            <div class="header_search">
-                <a href="/search.html">
-                    <h5>Search</h5>
-                </a>
-            </div>
-            <div class="header_profile">
-                <a href="/profile.html">
-                    <h5>Nickname</h5>    
-                </a>
-            </div>
-        </div>
-        <!-- REGISTER  -->
-        <div class="register">
-            <div class="register__box">
-                <div class="register__title">
-                        Register
+        </nav>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="register">
+                        <div class="register__box">
+                            <div class="register__title">
+                                    Register
+                            </div>
+                            <div class="register__fields">
+                                <div class="form__text">
+                                    <input type="text" name="nickname" id="nickname" placeholder=" " />
+                                    <label for="nickname">Nickname</label>    
+                                </div>
+                                <div class="form__text">
+                                    <input type="email" name="email" id="email" placeholder=" " />
+                                    <label for="email">Email</label>        
+                                </div>
+                                <div class="form__text">
+                                    <input type="password" name="pwd" id="pwd" placeholder=" " />
+                                    <label for="pwd">Password</label>
+                                </div>
+                                <div class="form__text">
+                                    <input type="password" name="pwd2nd" id="pwd2nd" placeholder=" " />
+                                    <label for="pwd2nd">Password again</label>
+                                </div>
+                            </div>
+                            <div class="register__buttons">
+                                <button class="button__small">Log in</button>
+                                <button class="button__small--active">Register</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="register__fields">
-                    <div class="form__text">
-                        <input type="text" name="nickname" id="nickname" placeholder=" " />
-                        <label for="nickname">Nickname</label>    
-                    </div>
-                    <div class="form__text">
-                        <input type="email" name="email" id="email" placeholder=" " />
-                        <label for="email">Email</label>        
-                    </div>
-                    <div class="form__text">
-                        <input type="password" name="pwd" id="pwd" placeholder=" " />
-                        <label for="pwd">Password</label>
-                    </div>
-                    <div class="form__text">
-                        <input type="password" name="pwd2nd" id="pwd2nd" placeholder=" " />
-                        <label for="pwd2nd">Password again</label>
-                    </div>
-                </div>
-                <div class="register__buttons">
-                    <button class="button__small">Log in</button>
-                    <button class="button__small--active">Register</button>
-                </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>

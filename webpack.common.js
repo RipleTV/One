@@ -58,7 +58,7 @@ module.exports = {
     }),
     // Home page (index.html)
     new HtmlWebpackPlugin({
-      template: `${PATHS.src}/html/index.html`,
+      template: `${PATHS.src}/html/hero.html`,
       filename: 'home.html',
     }),
     // Search page

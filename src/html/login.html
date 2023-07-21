@@ -8,62 +8,70 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- HEADER -->
-        <div class="header">
-            <div class="header_logo">
-                <a href="/home.html">
-                    <h5>AniBlue </h5>
-                </a>
-            </div>
-            <div class="header_search">
-                <a href="/search.html">
-                    <h5>Search</h5>
-                </a>
-            </div>
-            <div class="header_profile">
-                <a href="/profile.html">
-                    <h5>Nickname</h5>    
-                </a>
-            </div>
-        </div>
-        <!-- LOGIN  -->
-        <div class="login">
-            <div class="login__box">
-                <div class="login__title">
-                    Login
-                </div>
-                <div class="login__interaction">
-                    <div class="login__interaction--google">
-                        <button class="button__google">
-                            Continue with Google
-                        </button>
+        <nav>
+            <div class="container">
+                <div class="header">
+                    <div class="header_logo">
+                        <a href="/home.html">
+                            <h5>AniBlue </h5>
+                        </a>
                     </div>
-                    <div class="login__interaction--or">
-                        <span>or</span>
-                        <hr/>
+                    <div class="header_search">
+                        <a href="/search.html">
+                            <h5>Search</h5>
+                        </a>
                     </div>
-                    <div>
-                        <div>
-                            <div class="form__text">
-                                <input type="email" name="email" id="email" placeholder=" ">
-                                <label for="email">Email</label>
+                    <div class="header_profile">
+                        <a href="/profile.html">
+                            <h5>Nickname</h5>    
+                        </a>
+                    </div>
+                </div>                
+            </div>
+        </nav>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="login">
+                        <div class="login__box">
+                            <div class="login__title">
+                                Login
                             </div>
-                            <div class="form__text">
-                                <input type="password" name="pwd" id="pwd" placeholder=" ">
-                                <label for="pwd">Password</label>
+                            <div class="login__interaction">
+                                <div class="login__interaction--google">
+                                    <button class="button__google">
+                                        Continue with Google
+                                    </button>
+                                </div>
+                                <div class="login__interaction--or">
+                                    <span>or</span>
+                                    <hr/>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="form__text">
+                                            <input type="email" name="email" id="email" placeholder=" ">
+                                            <label for="email">Email</label>
+                                        </div>
+                                        <div class="form__text">
+                                            <input type="password" name="pwd" id="pwd" placeholder=" ">
+                                            <label for="pwd">Password</label>
+                                        </div>
+                                    </div>
+                                    <div class="login__interaction--forgot_password">
+                                        <a href="#">Forgot password?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="login__buttons">
+                                <button class="button__small">Register</button>
+                                <button class="button__small--active">Log in</button>
                             </div>
                         </div>
-                        <div class="login__interaction--forgot_password">
-                            <a href="#">Forgot password?</a>
-                        </div>
                     </div>
                 </div>
-                <div class="login__buttons">
-                    <button class="button__small">Register</button>
-                    <button class="button__small--active">Log in</button>
-                </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>

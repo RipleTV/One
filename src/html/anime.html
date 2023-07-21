@@ -4,159 +4,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS  -->
     <title>Anime page</title>
 </head>
 <body>
     <div class="wrapper">
-        <!-- HEADER -->
-        <div class="header">
-            <div class="header_logo">
-                <a href="/home.html">
-                    <h5>AniBlue </h5>
-                </a>
+        <nav>
+            <div class="container">
+                <div class="header">
+                    <div class="header_logo">
+                        <a href="/home.html">
+                            <h5>AniBlue </h5>
+                        </a>
+                    </div>
+                    <div class="header_search">
+                        <a href="/search.html">
+                            <h5>Search</h5>
+                        </a>
+                    </div>
+                    <div class="header_profile">
+                        <a href="/profile.html">
+                            <h5>Nickname</h5>    
+                        </a>
+                    </div>
+                </div>  
             </div>
-            <div class="header_search">
-                <a href="/search.html">
-                    <h5>Search</h5>
-                </a>
-            </div>
-            <div class="header_profile">
-                <a href="/profile.html">
-                    <h5>Nickname</h5>    
-                </a>
-            </div>
-        </div>
-        <div class="header--bg"></div>
-        <!-- MAIN -->
-        <div>
-            <div class="anime__main__picture">
-                <!-- Main title picture  -->
-                <img src="/assets/img/anime_preview.jpg" alt="anime main picture"/>
-            </div>
-            <div class="anime__title">
-                <!-- Main title name  -->
-                <H2>One piece</H2>
-            </div>
-            <div class="anime__quality">
-                <!-- Quality settings -->
+        </nav>
+        <main>
+            <section>
+                <!-- need to change scss params -->
+                <div class="anime__main__picture">
+                    <img src="/assets/img/anime_preview.jpg" alt="anime main picture"/>
+                </div>
+                <div class="container">
+                    <div class="anime__title">
+                        <H2>One piece</H2>
+                    </div>
+                </div>
+            </section>
+
+            <section>
                 <div>
                     <img 
                         src="/assets/img/anime_quality.jpg" 
                         alt="anime quality preview"
                         class="anime__quality--picture"
-                    >
+                        >
+                    <div class="anime__quality--gradient"></div>
                 </div>
-                <div>
-                    <ul class="anime__quality--options">
-                        <li>
-                            <button>1080p</button>
-                        </li>
-                        <li>
-                            <button>720p</button>
-                        </li>
-                        <li>
-                            <button>420p</button>
-                        </li>
-                        <li>
-                            <button>320p</button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="anime__quality--gradient"></div>
-                <div class="anime__quality--size">
-                    <h5>
-                        <p>1 episode = 2 GB</p>
-                    </h5>
-                </div>
-            </div>
-            <div>
-                <!-- Synced by author -->
-                <div class="anime__synced">
-                    <div class="anime__synced--title">
-                        <h3>
-                            Synced by
-                        </h3>
-                    </div>
-                    <div class="anime__synced--buttons">
-                        <ul>
-                            <li><button class="button__medium" >Button</button></li>
-                            <li><button class="button__medium" >Button</button></li>
+                <div class="container">
+                    <div class="anime__quality">
+                        <ul class="anime__quality--options">
+                            <li><button>1080p</button></li>
+                            <li><button>720p</button></li>
+                            <li><button>420p</button></li>
+                            <li><button>320p</button></li>
                         </ul>
-                        <ul>
-                            <li><button class="button__medium" >Button</button></li>
-                            <li><button class="button__medium" >Button</button></li>
-                        </ul>
-                        <ul>
-                            <li><button class="button__medium" >Button</button></li>
-                            <li><button class="button__medium" >Button</button></li>
-                        </ul>
-                        <ul>
-                            <li><button class="button__medium" disabled>Button</button></li>
-                            <li><button class="button__medium" disabled>Button</button></li>
-                        </ul>
-                    </div>    
-                    <div class="anime__synced--player">
-                        <audio controls>
-                            <source src="" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                        </audio>
+                        <div class="anime__quality--size">
+                            <h5>1 episode = 2 GB</h5>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="anime__seasons">
-                <!-- Seasons -->
-                <form>
-                    <ul>
-                        <li>
-                            <div class="form__checkbox">
-                                <input type="checkbox" name="season1" id="season1">
-                                <label for="season1">Season 1</label>    
-                            </div>
-                        </li>
-                        <li>
-                            <div class="form__checkbox">
-                                <input type="checkbox" name="season2" id="season2">
-                                <label for="season2">Season 2</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="form__checkbox">
-                                <input type="checkbox" name="season3" id="season3">
-                                <label for="season3">Season 3</label>    
-                            </div>
-                        </li>
-                    </ul>
-                </form>
+            </section>
 
+            <section>
+                <div class="container">
+                    <div class="anime__synced">
+                        <div class="anime__synced--title">
+                            <h3>Synced by</h3>
+                        </div>
+                        <div class="anime__synced--buttons">
+                            <ul>
+                                <li><button class="button__medium" >Button</button></li>
+                                <li><button class="button__medium" >Button</button></li>
+                            </ul>
+                            <ul>
+                                <li><button class="button__medium" >Button</button></li>
+                                <li><button class="button__medium" >Button</button></li>
+                            </ul>
+                            <ul>
+                                <li><button class="button__medium" >Button</button></li>
+                                <li><button class="button__medium" >Button</button></li>
+                            </ul>
+                            <ul>
+                                <li><button class="button__medium" disabled>Button</button></li>
+                                <li><button class="button__medium" disabled>Button</button></li>
+                            </ul>
+                        </div>    
+                        <div class="anime__synced--player">
+                            <audio controls>
+                                <source src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <div class="container">
+                    <div class="anime__seasons">
+                        <form>
+                            <ul>
+                                <li>
+                                    <div class="form__checkbox">
+                                        <input type="checkbox" name="season1" id="season1">
+                                        <label for="season1">Season 1</label>    
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form__checkbox">
+                                        <input type="checkbox" name="season2" id="season2">
+                                        <label for="season2">Season 2</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form__checkbox">
+                                        <input type="checkbox" name="season3" id="season3">
+                                        <label for="season3">Season 3</label>    
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>    
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="anime__download">
+                        <div class="anime__download__size">
+                            <h4>Total: 90Gb [100-650ep.]</h4>
+                        </div>
+                        <div>
+                            <button class="anime__download__button--default">
+                                Download
+                            </button>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <!-- <div class="anime__footer--download">
+                <h6>Downloaded: XXX times</h6>
+            </div> -->
+            <div class="anime__footer--agreement">
+                <h6>
+                    Copyright &copy; <script>document.write(new Date().getFullYear())</script>
+                </h6>                        
             </div>
-            <div class="anime__download">
-                <!-- Download -->
-                <div class="anime__download__size">
-                    <h4>
-                        Total: 90Gb [100-650ep.]
-                    </h4>
-                </div>
-                <div>
-                    <button class="anime__download__button--default">
-                        Download
-                    </button>
-                </div>
-            </div>
-            <footer>
-                <!-- Footer  -->
-                <!-- <div class="anime__footer--download">
-                    <h6>
-                        Downloaded: XXX times
-                    </h6>
-                </div> -->
-                <div class="anime__footer--agreement">
-                    <h6>
-                        Copyright &copy; <script>document.write(new Date().getFullYear())</script>
-                    </h6>                        
-                </div>
-            </footer>
-        </div>
+        </footer>
     </div>
 </body>
 </html>

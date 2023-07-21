@@ -8,61 +8,67 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- HEADER -->
-        <div class="header">
-            <div class="header_logo">
-                <a href="/home.html">
-                    <h5>AniBlue </h5>
-                </a>
+        <nav>
+            <div class="container">
+                <div class="header">
+                    <div class="header_logo">
+                        <a href="/home.html">
+                            <h5>AniBlue </h5>
+                        </a>
+                    </div>
+                    <div class="header_search">
+                        <a href="/search.html">
+                            <h5>Search</h5>
+                        </a>
+                    </div>
+                    <div class="header_profile">
+                        <a href="/profile.html">
+                            <h5>Nickname</h5>    
+                        </a>
+                    </div>
+                </div>    
             </div>
-            <div class="header_search">
-                <a href="/search.html">
-                    <h5>Search</h5>
-                </a>
-            </div>
-            <div class="header_profile">
-                <a href="/profile.html">
-                    <h5>Nickname</h5>    
-                </a>
-            </div>
-        </div>
-        <!-- PROFILE -->
-        <div class="profile">
-            <div class="profile__nickname">
-                <ul>
-                    <li>
-                        <!-- <input type="text" value="Nickname" > -->
-                        <div class="profile__nickname--nickname">
-                            <span contenteditable="true">
-                                Nickname
-                            </span>    
+        </nav>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="profile">
+                        <div class="profile__nickname">
+                            <ul>
+                                <li>
+                                    <!-- <input type="text" value="Nickname" > -->
+                                    <div class="profile__nickname--nickname">
+                                        <span contenteditable="true">
+                                            Nickname
+                                        </span>    
+                                    </div>
+                                    <div class="profile__nickname--error_message">
+                                        Something went wrong!
+                                    </div>
+                                </li>
+                                <li>
+                                    <button class="profile__nickname--button" >
+                                        <img src="/assets/img/pen_icon.svg" alt="edit nickname icon">
+                                    </button>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="profile__nickname--error_message">
-                            Something went wrong!
+                        <div class="profile__settings">
+                            <div class="profile__settings--download">
+                                <h4>Downloaded: XXX times</h4>
+                            </div>
+                            <div class="profile__settings--buttons">
+                                <ul>
+                                    <li><button class="button__medium" disabled >History                        </button></li>
+                                    <li><button class="button__medium"          >Your email: example@example.com</button></li>
+                                    <li><button class="button__medium"          >Your password: ***             </button></li>
+                                </ul>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <button class="profile__nickname--button" >
-                            <img src="/assets/img/pen_icon.svg" alt="edit nickname icon">
-                        </button>
-                    </li>
-                </ul>
-            </div>
-            <div class="profile__settings">
-                <div class="profile__settings--download">
-                    <h4>
-                        Downloaded: XXX times
-                    </h4>
+                    </div>
                 </div>
-                <div class="profile__settings--buttons">
-                    <ul>
-                        <li><button class="button__medium" disabled>History</button></li>
-                        <li><button class="button__medium" >Your email: example@example.com</button></li>
-                        <li><button class="button__medium" >Your password: ***</button></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>

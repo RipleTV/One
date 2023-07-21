@@ -1,20 +1,15 @@
 // Local vars
 $img-height: 750px;
 
-// Excludes
-.anime__img {
-    z-index: -2;
-    width: 100%;
-    height: $img-height;
-    object-fit: cover;
-}
-
 // Anime page
 .anime__main__picture {
     height: $img-height - 60px;
 
     img {
-        @extend .anime__img;
+        z-index: -2;
+        width: 100%;
+        height: $img-height;
+        object-fit: cover;
         position: absolute;
         left: 0;
         top: 0px;
@@ -30,10 +25,11 @@ $img-height: 750px;
 .anime__quality {
 
     &--picture {
-        @extend .anime__img;
+        z-index: -2;
+        width: 100%;
+        height: $img-height;
+        object-fit: cover;
         position: absolute;
-        top: 890px;
-        left: 0;
     }
 
     &--options {
@@ -62,9 +58,8 @@ $img-height: 750px;
     &--gradient {
         position: absolute;
         z-index: -1;
-        top: 890px;
-        left: 0;
-        width: 35%;
+        left: 0px;
+        width: 50%;
         height: $img-height;
         object-fit: cover;
         background-color: white;
@@ -74,7 +69,8 @@ $img-height: 750px;
             rgba(255, 255, 255, 0.60) 60%,
             rgba(255, 255, 255, 0.30) 80%,
             rgba(255, 255, 255, 0.00) 100%,
-            rgba(255, 255, 255, 0.00) 100%
+            rgba(255, 255, 255, 0.00) 100%,
+            
         );
     }
 

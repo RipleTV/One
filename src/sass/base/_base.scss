@@ -10,12 +10,13 @@ body {
   h5 {@include text-h5;}
   h6 {@include text-h6;}
 }
+ 
+.wrapper {}
 
-// Page wrapper 
-.wrapper {
-	max-width: 1170px;
+.container {
+  max-width: 1170px;
 	margin: 0px auto;
-  }
+}
 
 .box__page {
   display: flex;
