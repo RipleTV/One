@@ -65,31 +65,27 @@
             &:hover {
                 color: $white-typography-color;
                 background-color: $accent-hero-color;
+                a {color: $white-typography-color;}
             }
+        }
+
+        a {
+            text-decoration: none;
+            color: $primary-typography-color;
         }
 
         span {
             color: $white-typography-color;
             background-color: $accent-hero-color;
         }
-        
     }
 
     &--bar:has(&__group input:focus) {
         border: 2px solid $accent-hero-color;
 
     }
-
-    &__group:has(input:focus) ~ &__result{
+ 
+    &__group:has(input:not(:placeholder-shown)) ~ &__result {
         display: flex;
     }
 }
-
-
-
-
-
-
-
-
-

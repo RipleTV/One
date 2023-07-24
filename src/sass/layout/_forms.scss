@@ -94,9 +94,9 @@
         outline: none;
         cursor: pointer;
 
-        &:hover {
-            box-shadow: 0px 0px 10px $accent-hero-color;
-        }
+        // &:focus {
+        //     box-shadow: 0px 0px 10px $accent-hero-color;
+        // }
             // Adds check mark
         &:checked:after {
             content: url(/src/img/check_mark.svg);
