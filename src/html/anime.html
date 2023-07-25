@@ -95,19 +95,19 @@
                             <ul>
                                 <li>
                                     <div class="form__checkbox">
-                                        <input type="checkbox" name="season1" id="season1">
+                                        <input type="checkbox" name="season1" id="season1" onclick="sizeCounter(1)">
                                         <label for="season1">Season 1</label>    
                                     </div>
                                 </li>
                                 <li>
                                     <div class="form__checkbox">
-                                        <input type="checkbox" name="season2" id="season2">
+                                        <input type="checkbox" name="season2" id="season2" onclick="sizeCounter(2)">
                                         <label for="season2">Season 2</label>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="form__checkbox">
-                                        <input type="checkbox" name="season3" id="season3">
+                                        <input type="checkbox" name="season3" id="season3" onclick="sizeCounter(3)">
                                         <label for="season3">Season 3</label>    
                                     </div>
                                 </li>
@@ -121,7 +121,9 @@
                 <div class="container">
                     <div class="anime__download">
                         <div class="anime__download__size">
-                            <h4>Total: 90Gb [100-650ep.]</h4>
+                            <h4 id="anime__download__size">
+                                Total: 0 GB [0 episodes]
+                            </h4>
                         </div>
                         <div>
                             <button class="anime__download__button--default">
