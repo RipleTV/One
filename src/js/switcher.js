@@ -10,3 +10,15 @@ window.switcherContenteditable = function() {
         document.getElementById('profile__nickname--nickname-span').contentEditable = "false";
     }
 }
+
+// Image switcher
+const mapImage = new Map();
+
+mapImage.set(1080, '/assets/img/onepiece_quality_1080.jpg')
+mapImage.set(720, '/assets/img/onepiece_quality_720.jpg')
+mapImage.set(420, '/assets/img/onepiece_quality_420.jpg')
+mapImage.set(360, '/assets/img/onepiece_quality_360.jpg')
+
+window.changeImageQuality = function(number) {
+    document.getElementById('anime__quality--picture').src = mapImage.get(number)
+}

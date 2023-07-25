@@ -33,19 +33,20 @@
             <section>
                 <div>
                     <img 
-                        src="/assets/img/anime_quality.jpg" 
+                        src="/assets/img/onepiece_quality_1080.jpg" 
                         alt="anime quality preview"
                         class="anime__quality--picture"
+                        id="anime__quality--picture"
                         >
                     <div class="anime__quality--gradient"></div>
                 </div>
                 <div class="container">
                     <div class="anime__quality">
                         <ul class="anime__quality--options">
-                            <li><button>1080p</button></li>
-                            <li><button>720p</button></li>
-                            <li><button>420p</button></li>
-                            <li><button>320p</button></li>
+                            <li><button onclick="changeImageQuality(1080)">1080p</button></li>
+                            <li><button onclick="changeImageQuality(720)">720p</button></li>
+                            <li><button onclick="changeImageQuality(420)">420p</button></li>
+                            <li><button onclick="changeImageQuality(360)">360p</button></li>
                         </ul>
                         <div class="anime__quality--size">
                             <h5>1 episode = 2 GB</h5>
@@ -80,7 +81,7 @@
                         </div>    
                         <div class="anime__synced--player">
                             <audio controls>
-                                <source src="" type="audio/mpeg">
+                                <source src="" type="audio/mp3">
                             Your browser does not support the audio element.
                             </audio>
                         </div>
