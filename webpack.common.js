@@ -44,13 +44,8 @@ module.exports = {
       },
       {
         //  Images
-        test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|ico|mp3)$/i,
         type: 'asset/resource',
-      },
-      {
-        test: /\.mp3$/,
-        // include: SRC,
-        type: 'asset/resource'
       },
     ],
   },
