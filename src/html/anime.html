@@ -63,7 +63,7 @@
                         </div>
                         <div class="anime__synced--buttons">
                             <ul>
-                                <li><button class="button__medium" >Button</button></li>
+                                <li><button class="button__medium" onclick="changeAudio('ShachiBuri')">Shachiburi</button></li>
                                 <li><button class="button__medium" >Button</button></li>
                             </ul>
                             <ul>
@@ -80,8 +80,8 @@
                             </ul>
                         </div>    
                         <div class="anime__synced--player">
-                            <audio controls>
-                                <source src="" type="audio/mp3">
+                            <audio controls id="anime__synced--player">
+                                <source src="" type="audio/mp3" id="anime__synced--player-source">
                             Your browser does not support the audio element.
                             </audio>
                         </div>

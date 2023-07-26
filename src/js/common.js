@@ -1,4 +1,5 @@
 import './pictures.js';
+import './audio.js'
 
 import './switcher.js';
 import './counter.js';

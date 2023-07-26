@@ -22,3 +22,18 @@ mapImage.set(360, '/assets/img/onepiece_quality_360.jpg')
 window.changeImageQuality = function(number) {
     document.getElementById('anime__quality--picture').src = mapImage.get(number)
 }
+
+// Audio switcher
+const mapAudio = new Map();
+
+mapAudio.set('ShachiBuri', '/assets/img/SyncedByShachiburi.mp3')
+
+window.changeAudio = function(authorName) {
+    let audio = document.getElementById('anime__synced--player');
+    let source = document.getElementById('anime__synced--player-source');    
+    
+    source.src = mapAudio.get(authorName);
+
+    audio.load();
+    audio.play();
+}
