@@ -1,8 +1,8 @@
-import './pictures.js';
-import './audio.js'
+import './imports/pictures.js';
+import './imports/audio.js';
 
-import './switcher.js';
-import './counter.js';
+import './functions/counter.js';
+import './functions/switcher.js';
 
 if (process.env.NODE_ENV !== 'production') {
     console.log('[index.js] Looks like we are in development mode!');

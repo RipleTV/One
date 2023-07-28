@@ -26,7 +26,9 @@
                                 <li>
                                     <!-- <input type="text" value="Nickname" > -->
                                     <div class="profile__nickname--nickname">
-                                        <span contenteditable="false" id="profile__nickname--nickname-span">
+                                        <span 
+                                            contenteditable="false" 
+                                            id="profile__nickname--nickname-span" >
                                             Nickname
                                         </span>    
                                     </div>
@@ -35,7 +37,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <button class="profile__nickname--button" onclick="switcherContenteditable()" >
+                                    <button class="profile__nickname--button" onclick="switchContenteditable('profile__nickname--nickname-span')" >
                                         <img src="/assets/img/pen_icon.svg" alt="edit nickname icon">
                                     </button>
                                 </li>
