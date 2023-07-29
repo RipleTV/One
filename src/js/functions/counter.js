@@ -1,21 +1,36 @@
-const seasonSize = [0, 6, 8, 13]
-const seasonEpisodes = [0, 12, 12, 24]
+// Will be changed to JSON in future 
 
-let size = 0;
-let episodes = 0;
+
+let anime = {
+    episodes: [0, 12, 12, 24],
+    seasonSize: [0, 7, 9, 16],
+}
 
 // Size counter
-window.sizeCounter = function(number) {
-    seasonState = document.getElementById('season' + number).checked
+let summarySize = 0;
+let summaryEpisodes = 0;
 
-    if (seasonState == true) {
-        size = size + seasonSize[number];
-        episodes = episodes + seasonEpisodes[number]
-    }
-    else {
-        size = size - seasonSize[number];
-        episodes = episodes - seasonEpisodes[number]
-    }
+let isCheckmarked = (id) => document.getElementById(id).checked;
+ 
+let updateSummarySize = function(seasonNumber) {
 
-    document.getElementById('anime__download__size').innerHTML = "Total: " + size + " GB [" + episodes + " episodes]";
+    if (isCheckmarked('season' + seasonNumber)) {
+        summarySize += anime.seasonSize[seasonNumber];
+        summaryEpisodes += anime.episodes[seasonNumber];
+    }   else    {
+        summarySize -= anime.seasonSize[seasonNumber];
+        summaryEpisodes -= anime.episodes[seasonNumber];
+    }
+};
+
+function editSizeTitle() {
+    let title = document.getElementById('anime__download__size');
+    let text = "Total: " + summarySize + " GB [" + summaryEpisodes + " episodes]"
+
+    title.innerHTML = text;
 }
+
+window.countSummarySizeWithSeason = (seasonNumber) => {
+    updateSummarySize(seasonNumber);
+    editSizeTitle();
+};
