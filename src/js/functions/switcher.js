@@ -23,11 +23,11 @@ window.changeImageQuality = function(quality) {
 // Audio switcher
 const mapAudio = new Map();
 
-mapAudio.set('ShachiBuri', '/assets/img/SyncedByShachiburi.mp3');
+mapAudio.set('ShachiBuri', '/assets/img/DubbedByShachiburi.mp3');
 
 window.changeAudio = function(authorName) {
-    let audio = document.getElementById('anime__synced--player');
-    let source = document.getElementById('anime__synced--player-source');    
+    let audio = document.getElementById('anime__dubbing--player');
+    let source = document.getElementById('anime__dubbing--player-source');    
     
     source.src = mapAudio.get(authorName);
 
