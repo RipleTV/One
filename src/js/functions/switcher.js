@@ -23,7 +23,7 @@ window.changeImageQuality = function(quality) {
 // Audio switcher
 const mapAudio = new Map();
 
-mapAudio.set('ShachiBuri', '/assets/img/DubbedByShachiburi.mp3');
+mapAudio.set('ShachiBuri', '/assets/img/dubbed_by_shachiburi.mp3');
 
 window.changeAudio = function(authorName) {
     let audio = document.getElementById('anime__dubbing--player');

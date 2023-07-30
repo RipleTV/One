@@ -1,1 +1,1 @@
-import '/src/audio/DubbedByShachiburi.mp3'
+import '/src/audio/dubbed_by_shachiburi.mp3'
