@@ -4,56 +4,25 @@ import './getDataFromJson.js'
 const anime = await getDataFromJSON(one_piece); 
 
 window.loadAnimePage = function() {
-    document.getElementById('anime__title').innerText = anime.title;
-    document.getElementById('anime__title__picture').src = anime.title_image;
-    
-    document.getElementById('anime__quality--picture').src = anime.quality[3].src
+
+    loadAnimeTitle();
 
     createQualityButtons(anime.quality.length);
-    // // ...
+    loadQualityPreviewImage(anime.quality[3].src);
 
-    // // Dubbling
     createDubblingButtons(anime.dubbed.length);
-    // // Seasons
+
     createCheckboxes(anime.season.length);
 }
-
 
     // * ONLY WHILE WORKING WITH ANIME PAGE
     loadAnimePage();
     // *
 
 
-function createDubblingButtons(amount) {
-    let div = document.getElementById('anime__dubbing--buttons');
-
-    for(let i = 0; i < amount; i++) {
-        let button = document.createElement('button');
-        let li = document.createElement('li');
-
-        button.className ='button__medium';
-        button.id = 'button' + '-' + i;
-        button.innerHTML = anime.dubbed[i].name;
-
-
-        if (i % 2) {
-            let otherUlId = i - 1;
-            let ul = document.getElementById('ul' + '-' + otherUlId)
-
-            ul.appendChild(li)
-            li.appendChild(button)
-            
-        } else {
-            // console.log('ul' + '-' + i);
-            let ul = document.createElement('ul')
-            ul.id = 'ul' + '-' + i;
-
-            div.appendChild(ul)
-            ul.appendChild(li)
-            li.appendChild(button)
-
-        }
-    }
+function loadAnimeTitle() {
+    document.getElementById('anime__title').innerText = anime.title;
+    document.getElementById('anime__title__picture').src = anime.title_image;
 }
 
 function createQualityButtons(amount) {
@@ -75,6 +44,38 @@ function createQualityButtons(amount) {
 
         ul.prepend(li);
         li.prepend(button);
+    }
+}
+
+function loadQualityPreviewImage(source) {
+    document.getElementById('anime__quality--picture').src = source;
+}
+
+function createDubblingButtons(amount) {
+    let div = document.getElementById('anime__dubbing--buttons');
+
+    for(let i = 0; i < amount; i++) {
+        let button = document.createElement('button');
+        let li = document.createElement('li');
+
+        button.className ='button__medium';
+        button.id = 'button' + '-' + i;
+        button.innerHTML = anime.dubbed[i].name;
+        button.setAttribute("onclick", `changeAudio(${i})`);
+
+        if (i % 2 == false) {
+            let ul = document.createElement('ul')
+            ul.id = 'ul' + '-' + i;
+
+            div.appendChild(ul)
+            ul.appendChild(li)
+            li.appendChild(button)
+        } else {
+            let ul = document.getElementById('ul' + '-' + (i - 1));
+
+            ul.appendChild(li);
+            li.appendChild(button);
+        }
     }
 }
 

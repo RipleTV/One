@@ -3,11 +3,9 @@ import './getDataFromJson.js'
 
 const anime = await getDataFromJSON(one_piece); 
 
-console.log(anime);
-
-// Size counter
 let summarySize = 0;
 let summaryEpisodes = 0;
+
 
 let isCheckmarked = (id) => document.getElementById(id).checked;
  
@@ -16,7 +14,7 @@ let updateSummarySize = function(seasonNumber) {
     if (isCheckmarked('season' + seasonNumber)) {
         summarySize += Number(anime.season[seasonNumber].size);
         summaryEpisodes += Number(anime.season[seasonNumber].episodes);
-    }   else    {
+    } else {
         summarySize -= Number(anime.season[seasonNumber].size);
         summaryEpisodes -= Number(anime.season[seasonNumber].episodes);
     }

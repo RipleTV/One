@@ -3,6 +3,7 @@ import './getDataFromJson.js'
 
 const anime = await getDataFromJSON(one_piece); 
 
+
 // Switch contentEditable option 
 let isContenteditable = (id) => document.getElementById(id).contentEditable === 'true';
 
@@ -19,15 +20,11 @@ window.changeImageQuality = function(number) {
 }
 
 // Audio switcher
-const mapAudio = new Map();
-
-mapAudio.set('ShachiBuri', '/assets/img/dubbed_by_shachiburi.mp3');
-
-window.changeAudio = function(authorName) {
+window.changeAudio = function(number) {
     let audio = document.getElementById('anime__dubbing--player');
     let source = document.getElementById('anime__dubbing--player-source');    
     
-    source.src = mapAudio.get(authorName);
+    source.src = anime.dubbed[number].src;
 
     audio.load();
     audio.play();

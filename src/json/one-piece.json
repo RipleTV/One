@@ -4,18 +4,22 @@
     "quality": [
         {
             "title": "360",
+            "size": 100,
             "src": "/assets/img/onepiece_quality_360.jpg"
         },
         {
             "title": "420",
+            "size": 200,
             "src": "/assets/img/onepiece_quality_420.jpg"
         },
         {
             "title": "720",
+            "size": 300,
             "src": "/assets/img/onepiece_quality_720.jpg"
         },
         {
             "title": "1080",
+            "size": 400,
             "src": "/assets/img/onepiece_quality_1080.jpg"
         }
     ],
