@@ -1,0 +1,45 @@
+{
+    "title": "One Piece",
+    "title_image": "/assets/img/anime_preview.jpg",
+    "quality": [
+        {
+            "title": "360",
+            "src": "/assets/img/onepiece_quality_360.jpg"
+        },
+        {
+            "title": "420",
+            "src": "/assets/img/onepiece_quality_420.jpg"
+        },
+        {
+            "title": "720",
+            "src": "/assets/img/onepiece_quality_720.jpg"
+        },
+        {
+            "title": "1080",
+            "src": "/assets/img/onepiece_quality_1080.jpg"
+        }
+    ],
+    "dubbed": [
+        {   
+            "name": "Shachiburi",
+            "src": "/assets/img/dubbed_by_shachiburi.mp3"
+        }
+    ],
+    "season": [
+        {
+            "title": "Season 1",
+            "episodes": "12",
+            "size": "8"
+        },
+        {
+            "title": "Season 2",
+            "episodes": "12",
+            "size": "9"
+        },
+        {
+            "title": "Season 3",
+            "episodes": "24",
+            "size": "16"
+        }
+    ]
+}

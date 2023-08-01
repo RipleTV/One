@@ -47,6 +47,11 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif|ico|mp3)$/i,
         type: 'asset/resource',
       },
+      {
+        //  JSON
+        test: /\.(json)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   plugins: [
