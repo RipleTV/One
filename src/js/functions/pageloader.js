@@ -4,20 +4,18 @@ import './getDataFromJson.js'
 const anime = await getDataFromJSON(one_piece); 
 
 window.loadAnimePage = function() {
+    if ((document.getElementById('anime__page--main')) !== null) {
+        loadAnimeTitle();
 
-    loadAnimeTitle();
-
-    createQualityButtons(anime.quality.length);
-    loadQualityPreviewImage(anime.quality[3].src);
-
-    createDubblingButtons(anime.dubbed.length);
-
-    createCheckboxes(anime.season.length);
+        createQualityButtons(anime.quality.length);
+        loadQualityPreviewImage(anime.quality[3].src);
+    
+        createDubblingButtons(anime.dubbed.length);
+    
+        createCheckboxes(anime.season.length);
+    }
 }
-
-    // * ONLY WHILE WORKING WITH ANIME PAGE
-    loadAnimePage();
-    // *
+loadAnimePage();
 
 
 function loadAnimeTitle() {
