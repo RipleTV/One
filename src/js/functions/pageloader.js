@@ -9,9 +9,9 @@ window.loadAnimePage = function() {
 
         createQualityButtons(anime.quality.length);
         loadQualityPreviewImage(anime.quality[3].src);
-    
+
         createDubblingButtons(anime.dubbed.length);
-    
+
         createCheckboxes(anime.season.length);
     }
 }
@@ -45,8 +45,8 @@ function createQualityButtons(amount) {
     }
 }
 
-function loadQualityPreviewImage(source) {
-    document.getElementById('anime__quality--picture').src = source;
+function loadQualityPreviewImage(path) {
+    document.getElementById('anime__quality--picture').src = path;
 }
 
 function createDubblingButtons(amount) {
